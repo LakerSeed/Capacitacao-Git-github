@@ -97,3 +97,14 @@ function mudar_imagem(índice){
         }
     }
 }
+//Interações do menu hambúguer
+const menu = document.getElementById("menu");
+const links_container = document.getElementById("links_container");
+menu.onclick = function(){
+    if(links_container.style.display == "none"){
+        links_container.style.display = "block";
+    }
+    else{
+        links_container.style.display = "none";
+}
+}
